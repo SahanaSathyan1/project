@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AITechie Backend Hello</title>
+  <title>Hello World</title>
   <style>
     body {
       margin: 0;
@@ -56,7 +56,7 @@
 </head>
 <body>
   <div class="card">
-    <h1>Welcome to AITechie</h1>
+    <h1>Welcome!!</h1>
     <button onclick="callBackend()">Say Hello 👋</button>
     <div id="response"></div>
   </div>
@@ -64,7 +64,7 @@
   <script>
     async function callBackend() {
       try {
-        const res = await fetch("http://localhost:8088/api/hello"); // Use localhost here
+        const res = await fetch("http://15.206.173.212:9092/api/hello"); // Use localhost here
         if (!res.ok) throw new Error("Network error");
         const text = await res.text();
         document.getElementById("response").textContent = text;
