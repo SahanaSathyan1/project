@@ -44,7 +44,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-    - host: ec2-13-127-197-254.ap-south-1.compute.amazonaws.com  # Your public EC2 IP or DNS name
+    - host: ec2-15-206-173-212.ap-south-1.compute.amazonaws.com  # Your public EC2 IP or DNS name
       http:
         paths:
           - path: /
